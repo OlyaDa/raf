@@ -1,0 +1,46 @@
+
+.showroom {
+  padding: 55px 0 46px 0;
+  position: relative;
+  background: url("../../public/images/bg-showroom.png") center no-repeat;
+  background-size: cover;
+
+  .caption {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 161.18%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 52px;
+  }
+
+  .text {
+    border-left: 1px solid #fff;
+  }
+
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 161.18%;
+    color: #FFFFFF;
+    margin-bottom: 42px;
+    margin-left: 51px;
+    position: relative;
+
+    &:before {
+      content: "";
+      background: #FFFFFF;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: -57px;
+    }
+  }
+}
