@@ -62,4 +62,44 @@
       }
     }
   }
+
+  ////media
+
+  @media (max-width: 1280px) {
+    h4:after {
+      display: none;
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding: 40px 0 20px 0;
+
+    .image {
+      margin-bottom: 20px;
+    }
+
+    .caption {
+      font-size: 28px;
+      line-height: 138.18%;
+    }
+
+    h4 {
+      font-size: 28px;
+      line-height: 138.18%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .caption {
+      font-size: 25px;
+      line-height: 120%;
+    }
+
+    h4 {
+      font-size: 25px;
+      line-height: 120%;
+    }
+  }
 }

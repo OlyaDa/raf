@@ -41,17 +41,15 @@ $(window).scroll(function() {
     }
 });
 
-//slider for "certificates"
+//slider for "new"
 
-$('.certificates-slider').slick({
+$('.new-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
     arrows: true,
-    dots: true,
+    dots: false,
     autoplay: false,
-    centerMode: true,
-    centerPadding: '0px',
     prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
     nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
     responsive: [
@@ -59,16 +57,38 @@ $('.certificates-slider').slick({
             breakpoint: 992,
             settings: {
                 slidesToShow: 2,
-                arrows: true,
-                centerMode: false,
             }
         },
+
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+            }
+        },
+    ]
+});
+
+//slider for "gallery"
+
+$('.gallery-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    arrows: true,
+    dots: false,
+    autoplay: false,
+    centerMode: true,
+    centerPadding: '60px',
+    prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
+    nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
+    responsive: [
         {
             breakpoint: 769,
             settings: {
                 slidesToShow: 1,
-                arrows: false,
                 centerMode: false,
+                centerPadding: '0px',
             }
         },
     ]
@@ -77,47 +97,19 @@ $('.certificates-slider').slick({
 //slider for "reviews"
 
 $('.reviews-slider').slick({
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     infinite: true,
     arrows: true,
+    dots: false,
+    autoplay: false,
     prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
     nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
-    dots: true,
-    autoplay: false,
     responsive: [
-        {
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 2,
-                arrows: true,
-            }
-        },
         {
             breakpoint: 769,
             settings: {
                 slidesToShow: 1,
-                arrows: false,
-            }
-        },
-    ]
-});
-
-//slider for "models"
-
-$('.models-slider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    infinite: true,
-    arrows: true,
-    dots: true,
-    prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
-    nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
-    responsive: [
-        {
-            breakpoint: 577,
-            settings: {
-                arrows: false,
             }
         },
     ]
@@ -127,36 +119,14 @@ $('.models-slider').slick({
 
 $('.nav-link-new').mPageScroll2id();
 
-//video popup
+// setNameScroll
 
-$(document).ready(function() {
-    $('.popup-youtube').magnificPopup({
-        disableOn: 700,
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 160,
-        preloader: false,
-        fixedContentPos: false
-    });
-});
+const nameScroll = document.getElementById('input_order');
+const customTextFormSpan = document.getElementById('customTextForm');
 
-//gallery
-$(document).ready(function() {
-    $('.popup-gallery').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        tLoading: 'Loading image #%curr%...',
-        mainClass: 'mfp-img-mobile',
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-        },
-        image: {
-            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-            titleSrc: function(item) {
-                return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-            }
-        }
-    });
-});
+function setNameScroll(namescroll, customTextFormSpanF) {
+
+    nameScroll.value = namescroll;
+    customTextFormSpan.textContent = customTextFormSpanF;
+};
+

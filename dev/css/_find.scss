@@ -1,0 +1,190 @@
+.find {
+  padding: 63px 0 59px 0;
+  position: relative;
+  background: rgba(0, 0, 0, 0.95);
+
+  .caption {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 190.18%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 42px;
+  }
+
+  form {
+
+    .inputs {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 50px;
+    }
+
+    input {
+      border: none;
+      border-bottom: 1px solid #D1D1D1;
+      padding: 12px 0;
+      width: 40%;
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      text-transform: uppercase;
+      color: #E2E2E2;
+      background: transparent;
+      outline: none !important;
+      margin-bottom: 20px;
+    }
+
+    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+      color: #E2E2E2;
+    }
+    input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+      color: #E2E2E2;
+    }
+    input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+      color: #E2E2E2;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #E2E2E2;
+    }
+
+    textarea {
+      border: none;
+      border-bottom: 1px solid #D1D1D1;
+      width: 100%;
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      text-transform: uppercase;
+      color: #E2E2E2;
+      background: transparent;
+      outline: none !important;
+      height: 37px;
+      margin-bottom: 70px;
+    }
+
+    textarea::-webkit-input-placeholder { color: #E2E2E2; }
+    textarea::-ms-input-placeholder { color: #E2E2E2; }
+    textarea::-ms-input-placeholder { color: #E2E2E2; }
+    textarea::placeholder { color: #E2E2E2; }
+
+    button {
+      border: 3px solid transparent;
+      background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #616161, silver);
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      box-shadow: 2px 1000px 1px black inset;
+      cursor: pointer;
+      height: 60px;
+
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      outline: none !important;
+      padding: 13px 71px;
+      margin-left: auto;
+      display: block;
+    }
+
+    button:hover {
+      border: solid 3px transparent;
+      background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg,#C0C0C0, #616161);
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      box-shadow: 2px 1000px 1px black inset;
+      transition: .8s;
+    }
+  }
+
+  .inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social {
+    a {
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 190.18%;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-bottom: 30px;
+    }
+  }
+
+  .icon-facebook:before, .icon-instagram:before {
+    color: #FFFFFF;
+    font-size: 24px;
+  }
+
+  .icon-facebook:before {
+    margin-right: 34px;
+  }
+
+  ////media
+
+  @media (max-width: 991px) {
+    padding: 40px 0;
+
+    .caption {
+      line-height: 138.18%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    form .inputs {
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 0;
+    }
+
+    form textarea {
+      margin-bottom: 20px;
+    }
+
+    .inner {
+      flex-direction: column-reverse;
+
+    }
+
+    form input {
+      width: 100%;
+    }
+
+    form button {
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
+
+    .social p {
+      margin-bottom: 20px;
+    }
+
+    .icons {
+      width: 87px;
+      margin: auto;
+    }
+
+    .caption {
+      line-height: 120%;
+    }
+  }
+}

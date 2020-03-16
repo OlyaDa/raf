@@ -1,0 +1,177 @@
+
+.project {
+  padding: 134px 0;
+  position: relative;
+  background: url("../../public/images/bg-showroom.png") center no-repeat;
+  background-size: cover;
+
+  .caption {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 161.18%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 42px;
+  }
+
+  .sub-caption {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 161.18%;
+    color: #FFFFFF;
+    margin-bottom: 0;
+  }
+
+  .inner {
+    padding: 60px 30px 60px 30px;
+    background: rgba(0, 0, 0, 0.95);
+  }
+
+  form {
+    .form-title {
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 190.18%;
+      text-align: center;
+      color: #FFFFFF;
+      margin-top: 24px;
+      margin-bottom: 30px;
+      max-width: 100%;
+    }
+
+    input {
+      border: none;
+      border-bottom: 1px solid #D1D1D1;
+      padding: 12px 0;
+      width: 100%;
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      text-transform: uppercase;
+      color: #E2E2E2;
+      background: transparent;
+      outline: none !important;
+      margin-bottom: 20px;
+    }
+
+    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+      color: #E2E2E2;
+    }
+    input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+      color: #E2E2E2;
+    }
+    input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+      color: #E2E2E2;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #E2E2E2;
+    }
+
+    button {
+      border: 3px solid transparent;
+      background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #616161, silver);
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      box-shadow: 2px 1000px 1px black inset;
+      cursor: pointer;
+
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      outline: none !important;
+      padding: 13px 19px;
+      margin-top: 20px;
+      margin-left: auto;
+      display: block;
+    }
+
+    button:hover {
+      border: solid 3px transparent;
+      background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg,#C0C0C0, #616161);
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      box-shadow: 2px 1000px 1px black inset;
+      transition: .8s;
+    }
+  }
+
+//media
+
+  @media (max-width: 991px) {
+    padding: 40px 0;
+
+    form .form-title {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .inner {
+      padding: 40px 20px;
+    }
+
+    .caption {
+      font-size: 28px;
+      line-height: 138.18%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .sub-caption {
+      font-size: 20px;
+      line-height: 138.18%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    form button {
+      margin-right: auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    .inner {
+      padding: 20px;
+    }
+
+    .caption {
+      font-size: 25px;
+      line-height: 120%;
+    }
+
+    .sub-caption {
+      font-size: 20px;
+      line-height: 120%;
+    }
+  }
+
+  @media (max-width: 576px) {
+    form input {
+      padding: 5px 0;
+    }
+
+    form button {
+      font-size: 16px;
+      padding: 9px 19px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    form button {
+      font-size: 12px;
+      padding: 9px 10px;
+    }
+  }
+}
