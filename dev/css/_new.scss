@@ -184,6 +184,19 @@
   }
 
   @media (max-width: 576px) {
+
+    .item {
+      margin: 0;
+    }
+
+    .slick-prev.slick-arrow {
+      left: 0;
+    }
+
+    .slick-next {
+      right: 0;
+    }
+
     .new-slider {
       margin-bottom: 20px;
     }
