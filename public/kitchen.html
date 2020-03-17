@@ -1,0 +1,985 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Raf"/>
+    <meta property="og:description"
+          content=""/>
+    <meta property="og:image" content="<?php bloginfo(template_url);?>/images/logo.img">
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <title>Raf</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=cyrillic"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<div class="wrapper">
+
+    <!--.......................HEADER.......................-->
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="top">
+                    <div class="logo-address">
+                        <div class="logo">
+                            <a href="#">
+                                <img class="logo" src="images/logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <!--<div class="info">-->
+                        <!--Корпусная мебель под заказ-->
+                        <!--</div>-->
+                    </div>
+
+
+                    <span class="toggle-menu">
+                        <span></span>
+                    </span>
+                </div>
+
+                <nav class="main-nav">
+                    <ul class=" menu list-reset">
+                        <li><a href="#" class="nav-link-new">Кухни</a></li>
+                        <li><a href="#" class="nav-link-new">Шкафи Купе</a></li>
+                        <li><a href="#about" class="nav-link-new">О Нас</a></li>
+
+                        <li class="address-phone d-lg-none">
+                            <p> ул. Дмитриевская 71 <br> г. Киев</p>
+                            <div class="phones">
+                                <a href="tel:+380933257797">+380933257797</a> <br>
+                                <a href="tel:+380636596325">+380636596325</a>
+                            </div>
+                        </li>
+
+                        <li class="d-lg-none">
+                            <a href="https://www.facebook.com/RAFKiev/?eid=ARA0084LOeyjQ_IzmJOmSBk7BlCefCh8jL7mTH1K9EMQtXaR5P3vE9N6aNE8T-dAADiWz_T_Wsc9XBol"
+                               target="_blank"><span class="icon-facebook"></span></a>
+                            <a href="https://www.instagram.com/repair_and_furniture/" target="_blank"><span
+                                    class="icon-instagram"></span></a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="address">
+                    <p class=""> ул. Дмитриевская 71 <br> г. Киев</p>
+                </div>
+
+                <div class="phone">
+                    <a href="tel:+380933257797">+380933257797 <i class="fab fa-viber"></i> <i
+                            class="fab fa-telegram"></i> <i class="fab fa-whatsapp"></i></a>
+                    <a href="tel:+380636596325">+380636596325 <i class="fab fa-viber"></i> <i
+                            class="fab fa-telegram"></i> <i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--.......................BANNER.......................-->
+
+    <div class="banner2">
+        <div class="container">
+            <div class="banner-inner">
+
+                <div class="top">
+                    <div class="captions">
+                        <h2 class="caption">
+                            Кухни Под Заказ в Киеве
+                        </h2>
+                        <h3 class="sub-caption">Получите кухню своей мечты за 16 дней</h3>
+                    </div>
+
+                    <div class="present">
+                        <form class="order-main">
+                            <h4 class="form-title text-center">Разработаем 3D-визуализацию вашей кухни БЕСПЛАТНО!</h4>
+                            <input placeholder="ТЕЛЕФОН*" type="tel" name="phone" class="phoneidcl" required>
+                            <input name="order" type="hidden"
+                                   value="Разработаем 3D-визуализацию вашей кухни">
+
+                            <input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+                            <input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+                            <input type="hidden" name="utm_campaign"
+                                   value="<?php echo $_GET['utm_campaign']; ?>">
+                            <input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+                            <input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+
+                            <button class="disbutt" disabled>
+                                <span>Получить 3D проект</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="bottom">
+                    <div class="items">
+                        <div class="item">
+                            <span class="icon-idea"></span>
+                            <p>Рассрочка на 3 <br> платежа</p>
+                        </div>
+                        <div class="item">
+                            <span class="icon-insurance"></span>
+                            <p>Гарантия 3 года</p>
+                        </div>
+                        <div class="item">
+                            <span class="icon-timer"></span>
+                            <p>Производим с <br> 2008 года</p>
+                        </div>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/RAFKiev/?eid=ARA0084LOeyjQ_IzmJOmSBk7BlCefCh8jL7mTH1K9EMQtXaR5P3vE9N6aNE8T-dAADiWz_T_Wsc9XBol"
+                           target="_blank"><span class="icon-facebook"></span></a>
+                        <a href="https://www.instagram.com/repair_and_furniture/" target="_blank"><span
+                                class="icon-instagram"></span></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--.......................MAIN.......................-->
+
+    <main class="content">
+
+        <!--.......................KITCHENS.......................-->
+
+        <section class="kitchens">
+            <div class="container">
+                <h3 class="caption text-center">
+                    Выполним проекты любой сложности
+                </h3>
+
+                <div class="kitchens-slider">
+                    <div>
+                        <div class="row d-flex align-items-lg-center">
+                            <div class="col-lg-6">
+                                <div class="image">
+                                    <img src="images/k1.jpg" alt="Проект угловой кухни среднего размера">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <p class="title">
+                                    Проект угловой кухни среднего размера
+                                </p>
+                                <p><strong>Местоположение:</strong> г. Киев ул. Ломоносова</p>
+                                <p><strong>Площадь кухни:</strong> 7 кв.м</p>
+                                <p><strong>Тип здания:</strong> Хрущевка</p>
+                                <p><strong>Материал фасада:</strong> Нижние предметы ламинат EGGER; <br> верхние
+                                    предметы стекло с рисунком</p>
+                                <p><strong>Материал столешницы:</strong> Пластик беcшовный</p>
+                                <p><strong>Фурнитура:</strong> Европа GTV</p>
+                                <p><strong>Особенности:</strong> Кухня в теплых кофейно-молочных тонах создает домашний
+                                    уют, функциональные
+                                    требования компактно продуманны и реализованы для кухни средних размеров </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="row d-flex align-items-lg-center">
+                            <div class="col-lg-6">
+                                <div class="image">
+                                    <img src="images/k2.jpg" alt="Проект U-образной  кухни из стекла">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <p class="title">
+                                    Проект U-образной кухни из стекла
+                                </p>
+                                <p><strong>Местоположение:</strong> г. Киев</p>
+                                <p><strong>Площадь кухни:</strong> 9 кв.м</p>
+                                <p><strong>Тип здания:</strong> Новострой</p>
+                                <p><strong>Материал фасада:</strong> МДФ краска/стекло</p>
+                                <p><strong>Материал столешницы:</strong> Каленое стекло</p>
+                                <p><strong>Фурнитура:</strong> Европа GTV</p>
+                                <p><strong>Особенности:</strong> Применение стекла делает кухню «легче» на взгляд. Также
+                                    рабочая стенка изготовлена из каленого стекла. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="row d-flex align-items-lg-center">
+                            <div class="col-lg-6">
+                                <div class="image">
+                                    <img src="images/k3.jpg" alt="Проект U-образной  кухни из пластика">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <p class="title">
+                                    Проект U-образной кухни из пластика
+                                </p>
+                                <p><strong>Местоположение:</strong> г. Киев</p>
+                                <p><strong>Площадь кухни:</strong> 10 кв.м</p>
+                                <p><strong>Тип здания:</strong> Хрущевка</p>
+                                <p><strong>Материал фасада:</strong> Пластик/ЛДСП</p>
+                                <p><strong>Материал столешницы:</strong> Egger</p>
+                                <p><strong>Фурнитура:</strong> Европа GTV</p>
+                                <p><strong>Особенности:</strong> Благодаря спокойным оттенкам этот гарнитур придает
+                                    кухне уют и создает в ней домашнюю обстановку. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="row d-flex align-items-lg-center">
+                            <div class="col-lg-6">
+                                <div class="image">
+                                    <img src="images/k4.jpg" alt="Проект прямой  кухни из пластика">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <p class="title">
+                                    Проект прямой кухни из пластика
+                                </p>
+                                <p><strong>Местоположение:</strong> г. Киев</p>
+                                <p><strong>Площадь кухни:</strong> 6 кв.м</p>
+                                <p><strong>Тип здания:</strong> Новострой</p>
+                                <p><strong>Материал фасада:</strong> ЛДСП</p>
+                                <p><strong>Материал столешницы:</strong> Luxeform</p>
+                                <p><strong>Фурнитура:</strong> Европа GTV</p>
+                                <p><strong>Особенности:</strong> Кухни с фасадами из ЛДСП отличаются своей
+                                    экономичностью, но при этом неплохо смотрятся в интерьере. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--.......................SHOWROOM.......................-->
+
+        <section class="showroom" id="about">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 class="caption">
+                            Приходите к нам наш шоурум
+                        </h3>
+
+                        <div class="text">
+                            <p>
+                                Широкий ассортимент образцов мебели поможет вам понять что лучше подойдет для Вашей
+                                комнаты
+                            </p>
+
+                            <p>
+                                Мы следим за последними новинками в сфере мебельных материалов
+                            </p>
+
+                            <p>
+                                Наше производство находиться в одной локации с офисом, что позволяет быстро и
+                                безпрепятственно
+                                выбрать и согласовать все плитные материалы, сравнить текстуры и цвета в большом формате
+                            </p>
+
+                            <p>
+                                Если у вас возникла интересная мебельная идея, но вы до конца не уверенны в качестве и
+                                надежности ее работы, наши мастера с радостью в кратчайшие сроки спроектируют для вас
+                                мини
+                                версию чтоб вы смогли убедиться в качестве и соответствию всем техническим
+                                характеристикам.
+                            </p>
+                        </div>
+
+                        <div class="info">
+                            <p>г. Киев ул. Дмитриевская 71 5 этаж офис 506</p>
+                            <p>Пн-Пт 9.00 - 18.00</p>
+                            <p>Сб–Вс по предварительной записии</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 d-flex justify-content-lg-end justify-content-md-center justify-content-sm-center justify-content-center">
+                        <div class="inner">
+                            <h4 class="text-center">Приглашаем к сотрудничеству дизайнеров, <br> архитекторов или
+                                прорабов</h4>
+
+                            <p>Гаранитируем:</p>
+
+                            <div class="items">
+                                <div class="item">
+                                    <span class="icon-certificate"></span>
+                                    <span class="icon-text">24-х часовую поддержку</span>
+                                </div>
+
+                                <div class="item">
+                                    <span class="icon-appointment"></span>
+                                    <span class="icon-text">Предоставление <br>развернутых чертежей <br> для согласования</span>
+                                </div>
+
+                                <div class="item">
+                                    <span class="icon-stack-overflow"></span>
+                                    <span class="icon-text">Сдачу проекта в срок</span>
+                                </div>
+                            </div>
+
+                            <form class="order-main">
+                                <h4 class="form-title text-center">Заполните форму и получите коммерческое предложение
+                                    прямо сейчас</h4>
+                                <input placeholder="ИМЯ*" type="text" name="name" required>
+                                <input placeholder="ТЕЛЕФОН*" type="tel" name="phone"
+                                       class="phoneidcl" required>
+                                <textarea placeholder="ВОПРОС" name="name"></textarea>
+                                <input name="order" type="hidden"
+                                       value="Заполните форму и получите коммерческое предложение">
+
+                                <input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+                                <input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+                                <input type="hidden" name="utm_campaign"
+                                       value="<?php echo $_GET['utm_campaign']; ?>">
+                                <input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+                                <input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+
+                                <button class="disbutt" disabled>
+                                    <span>Отправить</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!--.......................WHY.......................-->
+
+        <section class="why">
+            <div class="container">
+                <h4>
+                    Почему мебель заказывают в «RAF»?
+                </h4>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item">
+                            <span class="icon-policy"></span>
+                            <div class="text">
+                                <p class="title">ОТ 12 ДО 36 МЕСЯЦЕВ</p>
+                                <p>Предоставляем гарантию на всю продукцию</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item">
+                            <span class="icon-file"></span>
+                            <div class="text">
+                                <p class="title">2500+</p>
+                                <p>Более 2000 выполненных индивидуальных заказов</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item">
+                            <span class="icon-coins"></span>
+                            <div class="text">
+                                <p class="title">СОБСТВЕНОЕ ПР-ВО</p>
+                                <p>Отличное соотношение качества и цены</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item">
+                            <span class="icon-individual"></span>
+                            <div class="text">
+                                <p class="title">ИНДИВИДУАЛЬНОСТЬ</p>
+                                <p>Работаем по персональным заказам</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item">
+                            <span class="icon-sharing"></span>
+                            <div class="text">
+                                <p class="title">12 ЛЕТ</p>
+                                <p>Изготавливаем мебель с 2007 года</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="item">
+                            <span class="icon-stationery"></span>
+                            <div class="text">
+                                <p class="title">ВЫЕЗД ЗАМЕРЩИКА</p>
+                                <p>При изготовлении индивидуальных заказов</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--.......................NEW.......................-->
+
+        <!--<section class="new">-->
+            <!--<div class="container">-->
+                <!--<h3 class="caption">-->
+                    <!--НОВИНКИ-->
+                <!--</h3>-->
+                <!--<p class="sub-caption">Наша компания производит декор для интерьера из натурального дерева Мербау</p>-->
+
+                <!--<div class="new-slider popup-gallery">-->
+                    <!--<div class="item">-->
+                        <!--<div class="image">-->
+                            <!--<a href="images/new1.jpg" title="Декор для интерьера"> <img src="images/new1.jpg"-->
+                                                                                        <!--alt="Декор для интерьера">-->
+                                <!--&lt;!&ndash;<img src="images/new1.jpg" alt="Декор для интерьера">&ndash;&gt;-->
+                            <!--</a>-->
+                        <!--</div>-->
+                        <!--<p>Декор для интерьера</p>-->
+                    <!--</div>-->
+
+                    <!--<div class="item">-->
+                        <!--<div class="image">-->
+                            <!--<a href="images/new2.jpg" title="Столы и подоконники"> <img src="images/new2.jpg"-->
+                                                                                        <!--alt="Столы и подоконники">-->
+                                <!--&lt;!&ndash;<img src="images/new2.jpg" alt="Столы и подоконники">&ndash;&gt;-->
+                            <!--</a>-->
+                        <!--</div>-->
+                        <!--<p>Столы и подоконники</p>-->
+                    <!--</div>-->
+
+                    <!--<div class="item">-->
+                        <!--<div class="image">-->
+                            <!--<a href="images/new3.jpg" title="Светильники"> <img src="images/new3.jpg" alt="Светильники">-->
+                                <!--&lt;!&ndash;<img src="images/new3.jpg" alt="Светильники">&ndash;&gt;-->
+                            <!--</a>-->
+                        <!--</div>-->
+                        <!--<p>Светильники</p>-->
+                    <!--</div>-->
+
+                    <!--<div class="item">-->
+                        <!--<div class="image">-->
+                            <!--<a href="images/new4.jpg" title="Зеркала"> <img src="images/new4.jpg" alt="Зеркала">-->
+                                <!--&lt;!&ndash;<img src="images/new4.jpg" alt="Зеркала">&ndash;&gt;-->
+                            <!--</a>-->
+                        <!--</div>-->
+                        <!--<p>Зеркала</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<h4>-->
+                    <!--<span class="icon-tick"></span>А так же мебельные конструкции из металла-->
+                <!--</h4>-->
+
+                <!--<div class="new-slider popup-gallery">-->
+                    <!--<div class="item">-->
+                        <!--<div class="image">-->
+                            <!--<a href="images/new5.jpg" title="Тумбы"> <img src="images/new5.jpg" alt="Тумбы">-->
+                                <!--&lt;!&ndash;<img src="images/new5.jpg" alt="Тумбы">&ndash;&gt;-->
+                            <!--</a>-->
+                        <!--</div>-->
+                        <!--<p>Тумбы</p>-->
+                    <!--</div>-->
+
+                    <!--<div class="item">-->
+                        <!--<div class="image">-->
+                            <!--<a href="images/new6.jpg" title="Полки"> <img src="images/new6.jpg" alt="Полки">-->
+                                <!--&lt;!&ndash;<img src="images/new6.jpg" alt="Полки">&ndash;&gt;-->
+                            <!--</a>-->
+                        <!--</div>-->
+                        <!--<p>Полки</p>-->
+                    <!--</div>-->
+
+                    <!--<div class="item">-->
+                        <!--<div class="image">-->
+                            <!--<a href="images/new7.jpg" title="Стулья"> <img src="images/new7.jpg" alt="Стулья">-->
+                                <!--&lt;!&ndash;<img src="images/new7.jpg" alt="Стулья">&ndash;&gt;-->
+                            <!--</a>-->
+                        <!--</div>-->
+                        <!--<p>Стулья</p>-->
+                    <!--</div>-->
+
+                    <!--<div class="item">-->
+                        <!--<div class="image">-->
+                            <!--<a href="images/new8.jpg" title="Столы"> <img src="images/new8.jpg" alt="Столы">-->
+                                <!--&lt;!&ndash;<img src="images/new8.jpg" alt="Столы">&ndash;&gt;-->
+                            <!--</a>-->
+                        <!--</div>-->
+                        <!--<p>Столы</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+            <!--</div>-->
+        <!--</section>-->
+
+        <!--.......................GALLERY.......................-->
+
+        <section class="gallery">
+            <div class="container">
+                <h3 class="caption">
+                    ГАЛЕРЕЯ ВЫПОЛНЕННЫХ РАБОТ
+                </h3>
+                <p class="sub-caption">Индивидуальный проект выполняется конкретно под вашу планировку, предпочтения и
+                    вкусы без ограничений по материалам и размерам</p>
+
+                <!--<div class="kitchen">-->
+                    <!--<p>Кухни</p>-->
+
+                    <!--<div class="gallery-slider popup-gallery">-->
+                        <!--<div class="image">-->
+                            <!--<a href="images/kitchen1.jpg"> <img src="images/kitchen1.jpg" alt="Кухня">-->
+                                <!--&lt;!&ndash;<img src="images/kitchen1.jpg" alt="Кухня">&ndash;&gt;-->
+                            <!--</a>-->
+                        <!--</div>-->
+
+                        <!--<div class="image">-->
+                            <!--<a href="images/kitchen2.jpg"> <img src="images/kitchen2.jpg" alt="Кухня">-->
+                                <!--&lt;!&ndash;<img src="images/kitchen2.jpg" alt="Кухня">&ndash;&gt;-->
+                            <!--</a>-->
+                        <!--</div>-->
+
+                        <!--<div class="image">-->
+                            <!--<a href="images/kitchen3.jpg"> <img src="images/kitchen3.jpg" alt="Кухня">-->
+                                <!--&lt;!&ndash;<img src="images/kitchen3.jpg" alt="Кухня">&ndash;&gt;-->
+                            <!--</a>-->
+                        <!--</div>-->
+
+                        <!--<div class="image">-->
+                            <!--<a href="images/kitchen4.jpg"> <img src="images/kitchen4.jpg" alt="Кухня">-->
+                                <!--&lt;!&ndash;<img src="images/kitchen4.jpg" alt="Кухня">&ndash;&gt;-->
+                            <!--</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="button">-->
+                        <!--<a href="#popup" class="btn popup-link"-->
+                           <!--onclick="setNameScroll('Получить прайс, Кухня', 'Заполните форму и получите БЕСПЛАТНУЮ консультацию в течении 1 часа', 'true');">-->
+                            <!--ПОЛУЧИТЬ ПРАЙС </a>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="furniture">-->
+                    <!--<p>Корпусная мебель</p>-->
+
+                    <!--<div class="gallery-slider popup-gallery">-->
+                        <!--<div class="image">-->
+                            <!--<a href="images/furniture1.jpg"> <img src="images/furniture1.jpg" alt="Корпусная мебель">-->
+                                <!--&lt;!&ndash;<img src="images/furniture1.jpg" alt="Корпусная мебель">&ndash;&gt;-->
+                            <!--</a>-->
+                        <!--</div>-->
+
+                        <!--<div class="image">-->
+                            <!--<a href="images/furniture2.jpg"> <img src="images/furniture2.jpg" alt="Корпусная мебель">-->
+                                <!--&lt;!&ndash;<img src="images/furniture2.jpg" alt="Корпусная мебель">&ndash;&gt;-->
+                            <!--</a>-->
+                        <!--</div>-->
+
+                        <!--<div class="image">-->
+                            <!--<a href="images/furniture3.jpg"> <img src="images/furniture3.jpg" alt="Корпусная мебель">-->
+                                <!--&lt;!&ndash;<img src="images/furniture3.jpg" alt="Корпусная мебель">&ndash;&gt;-->
+                            <!--</a>-->
+                        <!--</div>-->
+
+                        <!--<div class="image">-->
+                            <!--<a href="images/furniture4.jpg"> <img src="images/furniture4.jpg" alt="Корпусная мебель">-->
+                                <!--&lt;!&ndash;<img src="images/furniture4.jpg" alt="Корпусная мебель">&ndash;&gt;-->
+                            <!--</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="button">-->
+                        <!--<a href="#popup" class="btn popup-link"-->
+                           <!--onclick="setNameScroll('Получить прайс, Корпусная мебель', 'Заполните форму и получите БЕСПЛАТНУЮ консультацию в течении 1 часа', 'true');">-->
+                            <!--ПОЛУЧИТЬ ПРАЙС </a>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <div class="wardrobes">
+                    <p>Шкафы купе</p>
+
+                    <div class="gallery-slider popup-gallery">
+                        <div class="image">
+                            <a href="images/wardrobes1.jpg"> <img src="images/wardrobes1.jpg" alt="Шкаф купе">
+                                <!--<img src="images/wardrobes1.jpg" alt="Шкаф купе">-->
+                            </a>
+                        </div>
+
+                        <div class="image">
+                            <a href="images/wardrobes2.jpg"> <img src="images/wardrobes2.jpg" alt="Шкаф купе">
+                                <!--<img src="images/wardrobes2.jpg" alt="Шкаф купе">-->
+                            </a>
+                        </div>
+
+                        <div class="image">
+                            <a href="images/wardrobes3.jpg"> <img src="images/wardrobes3.jpg" alt="Шкаф купе">
+                                <!--<img src="images/wardrobes3.jpg" alt="Шкаф купе">-->
+                            </a>
+                        </div>
+
+                        <div class="image">
+                            <a href="images/wardrobes4.jpg"> <img src="images/wardrobes4.jpg" alt="Шкаф купе">
+                                <!--<img src="images/wardrobes4.jpg" alt="Шкаф купе">-->
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="button">
+                        <a href="#popup" class="btn popup-link"
+                           onclick="setNameScroll('Получить прайс, Шкафы купе', 'Заполните форму и получите БЕСПЛАТНУЮ консультацию в течении 1 часа', 'true');">
+                            ПОЛУЧИТЬ ПРАЙС </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--.......................PROJECT.......................-->
+
+        <section class="project">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-6">
+                        <h3 class="caption">
+                            У Вас есть свой проект, картинка из интернета или журнала?
+                        </h3>
+                        <p class="sub-caption">Заполните формы, прикрепите файл с проектом и мы <br> рассчитаем
+                            примерную стоимость кухни Вашей мечты!</p>
+                    </div>
+
+                    <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center">
+                        <div class="inner">
+
+                            <form class="order-main">
+                                <h4 class="form-title text-center">Заполните форму и получите коммерческое предложение
+                                    прямо сейчас</h4>
+                                <input placeholder="ИМЯ*" type="text" name="name" required>
+                                <input placeholder="ТЕЛЕФОН*" type="tel" name="phone"
+                                       class="phoneidcl" required>
+                                <textarea placeholder="ВОПРОС" name="name"></textarea>
+                                <input name="order" type="hidden"
+                                       value="Заполните форму и получите коммерческое предложение">
+
+                                <input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+                                <input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+                                <input type="hidden" name="utm_campaign"
+                                       value="<?php echo $_GET['utm_campaign']; ?>">
+                                <input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+                                <input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+
+                                <button class="disbutt" disabled>
+                                    <span>Обсудить проект с дизайнером</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--.......................STEPS.......................-->
+
+        <section class="steps">
+            <div class="container">
+                <h3 class="caption">Сделайте всего 6 шагов навстречу уюту и комфорту</h3>
+
+                <div class="line"></div>
+
+                <h4>
+                    Схема работы
+                </h4>
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-6">
+                        <div class="item">
+                            <div class="circle">
+                                <span class="icon-phone-call"></span>
+                            </div>
+                            <p class="one"><span class="number">1</span>Оставляете заявку на сайте или <br> звоните нам
+                                по телефону</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-6">
+                        <div class="item">
+                            <div class="circle">
+                                <span class="icon-car"></span>
+                            </div>
+                            <p class="two"><span class="number">2</span>К вам выезжает специалист и <br> делает замеры
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-6">
+                        <div class="item">
+                            <div class="circle">
+                                <span class="icon-project"></span>
+                            </div>
+                            <p class="three"><span class="number">3</span>Рисуем эскиз и разрабатываем <br> смету на
+                                проект</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-6">
+                        <div class="item">
+                            <div class="circle">
+                                <span class="icon-time-is-money"></span>
+                            </div>
+                            <p class="four"><span class="number">4</span>Определяем сроки и конечную <br> стоимость
+                                проекта</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-6">
+                        <div class="item">
+                            <div class="circle">
+                                <span class="icon-improvement"></span>
+                            </div>
+                            <p class="five"><span class="number">5</span>Изготавливаем вашу новую <br> мебель</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-6">
+                        <div class="item">
+                            <div class="circle">
+                                <span class="icon-happy"></span>
+                            </div>
+                            <p class="six"><span class="number">6</span>Вы довольны радуетесь уюту <br> дома</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--.......................REVIEWS.......................-->
+
+        <section class="reviews">
+            <div class="container">
+
+                <h3 class="caption">
+                    ОТЗЫВЫ НАШИХ КЛИЕНТОВ
+                </h3>
+
+                <div class="reviews-slider">
+
+                    <div class="item">
+                        <div class="image">
+                            <img src="images/rev1.png" alt="отзыв">
+                        </div>
+                        <div class="text">
+                            <p>Благодаря RAF я получила шкаф, о котором мечтала. Вместительный, небольшой, со множеством
+                                ящиков и полочек. И он идеально вписался в интерьер.</p>
+                            <p class="name"> Алина Меньшикова</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="image">
+                            <img src="images/rev2.png" alt="отзыв">
+                        </div>
+                        <div class="text">
+                            <p>Спасибо RAF за комплексный подход к созданию дизайна интерьера в нашей новой квартире!
+                                Продумали все до мелочей, учитывая наши пожелания))</p>
+                            <p class="name">Максим Фролов</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="image">
+                            <img src="images/rev3.jpg" alt="отзыв">
+                        </div>
+                        <div class="text">
+                            <p>"RAF Repair & Furniture/Комплексный ремонт Изготовление мебели" наш надежный партнер! За
+                                годы сотрудничества команда показала себя профессионалами в своем деле, на них всегда
+                                можно
+                                положиться. Высокое качество и каждый раз четкое выполнение обязательств и сроков. <br>
+                                Не жалея сил и своего личного времени, всегда ответят на все наши вопросы и найдут
+                                решения
+                                даже самых сложных задач. Нам очень комфортно работать вместе, потому что цель одна
+                                работать
+                                на результат! <br> Мы не будем останавливаться на достигнутом и сможем совместно
+                                реализовать
+                                еще много новых и интересных проектов.</p>
+                            <p class="name">Дизайн студия <br>DomiVitam Design Group </p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="image">
+                            <img src="images/rev4.png" alt="отзыв">
+                        </div>
+                        <div class="text">
+                            <p>Очень переживала по поводу выбора кухни. И очень зря! В итоге вышло так как я хотела.
+                                Всем
+                                кухонным принадлежностям нашлось место. Теперь ничего не стоит на столешнице и,
+                                одновременно, все необходимое есть под рукой!</p>
+                            <p class="name"> Анита Селянская </p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="image">
+                            <img src="images/rev5.png" alt="отзыв">
+                        </div>
+                        <div class="text">
+                            <p>Благодарю за особый подход к ремонту в детской! Сотрудники очень позаботились о
+                                безопасности
+                                материалов, а для нас это очень важно! Вся мебель подобрана с учётом, что ею будут
+                                пользоваться малыши. Никаких острых углов, максимум безопасности и интересные
+                                дизайнерские
+                                решения)</p>
+                            <p class="name">Виктория Академика </p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="image">
+                            <img src="images/rev6.png" alt="отзыв">
+                        </div>
+                        <div class="text">
+                            <p>Хотелось создать в спальне особую атмосферу комфорта. Было сотни идей в голове. Благодаря
+                                специалистам RAF удалось собрать их в кучу и создать неповторимый стиль, который
+                                подошёл именно мне! Теперь моя спальня действительно идеальная!</p>
+                            <p class="name">Николай Коликов </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--.......................FIND.......................-->
+
+        <section class="find">
+            <div class="container">
+                <h3 class="caption">
+                    Не нашли что искали? Отправьте заявку и наш дизайнер с вами свяжется
+                </h3>
+                <form class="order-main">
+                    <div class="inputs">
+                        <input placeholder="ИМЯ*" type="text" name="name" required>
+                        <input placeholder="ТЕЛЕФОН*" type="tel" name="phone" class="phoneidcl" required>
+                    </div>
+                    <textarea placeholder="ВОПРОС*" name="name"></textarea>
+                    <input name="order" type="hidden" value="Отправьте заявку и наш дизайнер с вами свяжется">
+
+                    <input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+                    <input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+                    <input type="hidden" name="utm_campaign"
+                           value="<?php echo $_GET['utm_campaign']; ?>">
+                    <input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+                    <input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+
+                    <div class="inner">
+                        <div class="social">
+                            <p>
+                                В наших социальных сетях еще больше работ
+                            </p>
+                            <div class="icons">
+
+                                <a href="https://www.facebook.com/RAFKiev/?eid=ARA0084LOeyjQ_IzmJOmSBk7BlCefCh8jL7mTH1K9EMQtXaR5P3vE9N6aNE8T-dAADiWz_T_Wsc9XBol"
+                                   target="_blank"><span class="icon-facebook"></span></a>
+                                <a href="https://www.instagram.com/repair_and_furniture/" target="_blank"><span
+                                        class="icon-instagram"></span></a>
+                            </div>
+                        </div>
+
+                        <button class="disbutt" disabled>
+                            <span>Отправить</span>
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!--.......................FOOTER.......................-->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="info">
+                <p>г. Киев ул. Дмитриевская 71 5 этаж офис 506</p>
+                <p>Пн-Пт 9.00 - 18.00</p>
+                <p>Сб–Вс по предварительной записии</p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.2425129067947!2d30.484688715543612!3d50.45520857947602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce62d97ae883%3A0x8b8bea12d5e50bc2!2z0YPQuy4g0JTQvNC40YLRgNC40LXQstGB0LrQsNGPLCA3MSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1584377897847!5m2!1sru!2sua"
+                        width="100%" height="337" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </footer>
+
+    <div class="devgen p-1 text-center">
+        <a href="http://GenerationLeadStudio.com" target="_blank"> <i class="far fa-copyright"></i> Developed by
+            GenerationLeadStudio</a>
+    </div>
+</div>
+
+<!--/////pop-up//////-->
+
+<div id="popup" class="mfp-hide popup">
+    <div class="container">
+
+        <form class="order-main">
+            <h4 class="form-title">
+                <span id="customTextForm">Заполните форму и получите БЕСПЛАТНУЮ консультацию в течении 1 часа</span>
+            </h4>
+            <input placeholder="ИМЯ*" type="text" name="name" required>
+            <input placeholder="ТЕЛЕФОН*" type="tel" name="phone" class="phoneidcl" required>
+            <input placeholder="ПОЧТА*" type="text" name="email" id="inMail" required>
+            <textarea placeholder="ВОПРОС" name="name"></textarea>
+            <input name="order" type="hidden" id="input_order">
+
+            <input type="hidden" name="utm_source" value="<?php echo $_GET['utm_source']; ?>">
+            <input type="hidden" name="utm_medium" value="<?php echo $_GET['utm_medium']; ?>">
+            <input type="hidden" name="utm_campaign" value="<?php echo $_GET['utm_campaign']; ?>">
+            <input type="hidden" name="utm_content" value="<?php echo $_GET['utm_content']; ?>">
+            <input type="hidden" name="utm_term" value="<?php echo $_GET['utm_term']; ?>">
+
+            <button class="disbutt" disabled>
+                <span>Получить</span>
+            </button>
+        </form>
+    </div>
+</div>
+
+<!--pop-up end-->
+
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- Fontawesome -->
+<script defer src="js/all.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Slick -->
+<script src="js/slick.min.js"></script>
+<!-- Magnific Popup core JS file -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<!-- Input Mask -->
+<script src="js/jquery.inputmask.bundle.min.js"></script>
+<!-- Page Scroll -->
+<script src="js/jquery.malihu.PageScroll2id.min.js"></script>
+<!-- Main JS -->
+<script src="js/main.js"></script>
+</body>
+</html>

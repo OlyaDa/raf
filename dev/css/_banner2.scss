@@ -1,0 +1,264 @@
+
+.banner2 {
+  position: relative;
+  min-height: calc(100vh - 83px);
+  background: linear-gradient(0deg, rgba(2, 2, 2, 0.5), rgba(2, 2, 2, 0.5)), url("../../public/images/bg-kitchen.png") center no-repeat;
+  background-size: cover;
+  padding-top: 83px;
+
+  .banner-inner {
+    min-height: calc(100vh - 83px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .caption {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    color: #FFFFFF;
+    max-width: 870px;
+    line-height: 128%;
+  }
+
+  .sub-caption {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 161.18%;
+    color: #FFFFFF;
+    margin-bottom: 0;
+  }
+
+  .present {
+    padding: 60px 20px;
+    background: #000;
+    max-width: 300px;
+    display: inline-block;
+    width: 100%;
+    margin-left: 20px;
+
+    form {
+      .form-title {
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 190.18%;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+        max-width: 100%;
+      }
+
+      input {
+        border: none;
+        border-bottom: 1px solid #D1D1D1;
+        padding: 12px 0;
+        width: 100%;
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #E2E2E2;
+        background: transparent;
+        outline: none !important;
+        margin-bottom: 30px;
+      }
+
+      input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+        color: #E2E2E2;
+      }
+      input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+        color: #E2E2E2;
+      }
+      input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+        color: #E2E2E2;
+      }
+      input::placeholder, textarea::placeholder {
+        color: #E2E2E2;
+      }
+
+      button {
+        border: 3px solid transparent;
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #616161, silver);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        box-shadow: 2px 1000px 1px black inset;
+        cursor: pointer;
+
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        outline: none !important;
+        padding: 13px 0;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+
+      button:hover {
+        border: solid 3px transparent;
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #C0C0C0, #616161);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        box-shadow: 2px 1000px 1px black inset;
+        transition: .8s;
+      }
+    }
+  }
+
+  .items {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+  }
+
+  .item {
+    background: rgba(0, 0, 0, 0.63);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 120%;
+      text-align: center;
+      color: #FFFFFF;
+      margin-bottom: 0;
+      margin-top: 20px;
+    }
+  }
+
+  .icon-idea:before, .icon-insurance:before, .icon-timer:before {
+    font-size: 70px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+
+  .icon-facebook:before, .icon-instagram:before {
+    color: #FFFFFF;
+    font-size: 24px;
+  }
+
+  .social {
+
+    a {
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+
+    .icon-facebook {
+      margin-right: 34px;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  ////media
+
+  @media (max-width: 920px) {
+    .items {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .top, .bottom {
+      flex-direction: column;
+    }
+
+    .caption {
+      text-align: center;
+    }
+
+    .sub-caption {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .items {
+      width: 100%;
+      margin-bottom: 0;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    .item {
+      margin-bottom: 20px;
+    }
+
+    .social {
+      width: 87px;
+      margin: 20px  auto;
+
+    }
+  }
+
+  @media (max-width: 576px) {
+    .caption {
+      font-size: 28px;
+      line-height: 130%;
+    }
+
+    .sub-caption {
+      font-size: 24px;
+      line-height: 130%;
+    }
+
+    .icon-idea:before, .icon-insurance:before, .icon-timer:before {
+      font-size: 50px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .icon-idea:before, .icon-insurance:before, .icon-timer:before {
+      font-size: 40px;
+    }
+
+    .item p {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .caption {
+      font-size: 22px;
+      line-height: 146%;
+    }
+
+    .sub-caption {
+      font-size: 20px;
+      line-height: 130%;
+    }
+  }
+}
+
+.banner3 {
+  background: url("../../public/images/bg-shcaf.jpg") center no-repeat;
+  background-size: cover;
+}

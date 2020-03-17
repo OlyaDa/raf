@@ -1,0 +1,123 @@
+.kitchens {
+  padding: 60px 0;
+  position: relative;
+
+  .caption {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 161.18%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #353535;
+    margin-bottom: 0;
+  }
+
+  .title {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 135.18%;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+
+  .kitchens-slider {
+    outline: none!important;
+  }
+
+  ///slick-prev slick-next
+
+  .slick-prev:before, .slick-next:before {
+    font-size: 1px;
+  }
+
+  .slick-prev.slick-arrow {
+    left: 0;
+  }
+
+  .slick-next {
+    right: 0;
+  }
+
+  .slick-prev, .slick-next {
+    top: 50%;
+    font-size: 16px;
+    line-height: 0;
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: #000;
+    border: 1px solid #000;
+    outline: none;
+    background: transparent;
+    z-index: 1;
+  }
+
+  .slick-prev:active, .slick-next:active, .slick-prev:hover, .slick-next:hover {
+    color: #fff;
+    border: 1px solid #000;
+    background: #000;
+  }
+  ///slick-prev slick-next end
+
+  .image {
+    position: relative;
+    margin: 40px;
+  }
+
+  .image:before, .image:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 68%;
+    height: 45px;
+    border: #000 solid 17px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .image:before {
+    right: -10px;
+    top: -10px;
+    border-left: none;
+    border-bottom: none;
+    z-index: -5;
+  }
+
+  .image:after {
+    left: -10px;
+    bottom: -10px;
+    border-right: none;
+    border-top: none;
+    z-index: -5;
+  }
+
+  ////media
+
+  @media (max-width: 991px) {
+    padding: 40px 0;
+
+    p {
+      text-align: center;
+    }
+
+    .caption {
+      font-size: 28px;
+      line-height: 138.18%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .caption {
+      font-size: 25px;
+      line-height: 120%;
+    }
+  }
+}

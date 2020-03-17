@@ -13,6 +13,9 @@ $caption_text: Cera Pro, sans-serif;
 @import "gallery";
 @import "find";
 @import "footer";
+@import "banner2";
+@import "kitchens";
+@import "shcaf";
 
 @font-face {
   font-family: 'icomoon';
@@ -41,6 +44,17 @@ $caption_text: Cera Pro, sans-serif;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-timer:before {
+  content: "\e914";
+}
+.icon-idea:before {
+  content: "\e912";
+  color: #fff;
+}
+.icon-insurance:before {
+  content: "\e913";
+  color: #fff;
+}
 .icon-appointment:before {
   content: "\e900";
   color: #fff;
@@ -104,6 +118,7 @@ $caption_text: Cera Pro, sans-serif;
   content: "\e911";
   color: #fff;
 }
+
 
 
 * {
