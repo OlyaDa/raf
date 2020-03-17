@@ -17,10 +17,18 @@
 
   .reviews-slider {
     outline: none;
+    width: 90%;
+    margin: auto;
+  }
+
+  .slick-track {
+    display: flex;
   }
 
   .item {
     margin: 0 16px;
+    height: auto;
+    background: #fff;
   }
 
   .text {
@@ -56,11 +64,11 @@
   }
 
   .slick-prev.slick-arrow {
-    left: 0;
+    left: -24px;
   }
 
   .slick-next {
-    right: 0;
+    right: -24px;
   }
 
   .slick-prev, .slick-next {
@@ -111,11 +119,19 @@
     }
 
     .slick-prev.slick-arrow {
-      left: 0;
+      left: -35px;
     }
 
     .slick-next {
-      right: 0;
+      right: -35px;
+    }
+
+    .reviews-slider {
+      width: 85%;
+    }
+    .slick-prev, .slick-next {
+      width: 35px;
+      height: 35px;
     }
   }
 }

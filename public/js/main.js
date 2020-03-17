@@ -117,16 +117,66 @@ $('.reviews-slider').slick({
 
 //scroll
 
-$('.nav-link-new').mPageScroll2id();
-
 // setNameScroll
 
 const nameScroll = document.getElementById('input_order');
 const customTextFormSpan = document.getElementById('customTextForm');
+const inMail = document.getElementById('inMail');
 
-function setNameScroll(namescroll, customTextFormSpanF) {
+function setNameScroll(namescroll, customTextFormSpanF, mail) {
 
     nameScroll.value = namescroll;
     customTextFormSpan.textContent = customTextFormSpanF;
+
+    if (mail == 'true') {
+        inMail.classList.remove('d-none');
+        inMail.setAttribute('required', 'required');
+    }
+    else {
+        inMail.classList.add('d-none');
+        inMail.removeAttribute('required', 'required');
+    }
 };
+
+//tele-order
+
+$(document).ready(function(){
+    $('.order-main').submit(function(e){
+        e.preventDefault();
+        $.magnificPopup.close();
+        $(".disbutt").prop("disabled", true);
+        $.ajax({
+            type:'POST',
+            url:'/wp-content/themes/baugroup/tele_order.php',
+            data: $(this).serialize()
+        }).done(function(){
+            $.magnificPopup.close();
+            setTimeout(function(){
+                window.location = 'done';
+            },1);
+        });
+    });
+});
+
+//gallery popup
+$(document).ready(function() {
+    $('.popup-gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            // titleSrc: function(item) {
+            //     return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+            // }
+        }
+    });
+
+});
 

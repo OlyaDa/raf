@@ -4,6 +4,10 @@
   position: relative;
   background: #E8E8E8;
 
+  .mfp-counter {
+    display: none !important;
+  }
+
   .caption {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
