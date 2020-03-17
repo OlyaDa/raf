@@ -45,6 +45,29 @@
       max-width: 100%;
     }
 
+    textarea {
+      margin-top: 10px;
+      border: none;
+      border-bottom: 1px solid #D1D1D1;
+      width: 100%;
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      text-transform: uppercase;
+      color: #E2E2E2;
+      background: transparent;
+      outline: none !important;
+      height: 37px;
+      margin-bottom: 20px;
+    }
+
+    textarea::-webkit-input-placeholder { color: #E2E2E2; }
+    textarea::-ms-input-placeholder { color: #E2E2E2; }
+    textarea::-ms-input-placeholder { color: #E2E2E2; }
+    textarea::placeholder { color: #E2E2E2; }
+
     input {
       border: none;
       border-bottom: 1px solid #D1D1D1;
@@ -158,9 +181,9 @@
   }
 
   @media (max-width: 576px) {
-    form input {
-      padding: 5px 0;
-    }
+    //form input {
+    //  padding: 5px 0;
+    //}
 
     form button {
       font-size: 16px;

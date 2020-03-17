@@ -432,6 +432,30 @@
     margin-top: 24px;
     margin-bottom: 30px;
     max-width: 100%; }
+  .showroom form textarea {
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid #D1D1D1;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #E2E2E2;
+    background: transparent;
+    outline: none !important;
+    height: 37px;
+    margin-bottom: 20px; }
+  .showroom form textarea::-webkit-input-placeholder {
+    color: #E2E2E2; }
+  .showroom form textarea::-ms-input-placeholder {
+    color: #E2E2E2; }
+  .showroom form textarea::-ms-input-placeholder {
+    color: #E2E2E2; }
+  .showroom form textarea::placeholder {
+    color: #E2E2E2; }
   .showroom form input {
     border: none;
     border-bottom: 1px solid #D1D1D1;
@@ -525,8 +549,6 @@
           display: none; }
     .showroom form button {
       margin-right: auto; }
-    .showroom form input {
-      padding: 5px 0; }
     .showroom form button {
       font-size: 16px;
       padding: 9px 71px; } }
@@ -1027,6 +1049,30 @@
     margin-top: 24px;
     margin-bottom: 30px;
     max-width: 100%; }
+  .project form textarea {
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid #D1D1D1;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #E2E2E2;
+    background: transparent;
+    outline: none !important;
+    height: 37px;
+    margin-bottom: 20px; }
+  .project form textarea::-webkit-input-placeholder {
+    color: #E2E2E2; }
+  .project form textarea::-ms-input-placeholder {
+    color: #E2E2E2; }
+  .project form textarea::-ms-input-placeholder {
+    color: #E2E2E2; }
+  .project form textarea::placeholder {
+    color: #E2E2E2; }
   .project form input {
     border: none;
     border-bottom: 1px solid #D1D1D1;
@@ -1106,8 +1152,6 @@
       font-size: 20px;
       line-height: 120%; } }
   @media (max-width: 576px) {
-    .project form input {
-      padding: 5px 0; }
     .project form button {
       font-size: 16px;
       padding: 9px 19px; } }
@@ -1266,12 +1310,16 @@
     .gallery .button {
       margin-top: 0; }
     .gallery p {
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 20px; }
     .gallery .furniture p {
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 20px; }
     .gallery .furniture .button {
+      margin-top: 20px;
       text-align: center; }
     .gallery .button {
+      margin-top: 20px;
       text-align: center; } }
   @media (max-width: 576px) {
     .gallery .btn {
